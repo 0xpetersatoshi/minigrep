@@ -1,8 +1,10 @@
 [package]
-name = "minigrep"
+name = "minigrep_pbegle"
 version = "0.1.0"
 authors = ["pbegle <peterbegle@gmail.com>"]
 edition = "2018"
+description = "Rust implementation of the grep CLI tool."
+license = "MIT OR Apache-2.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

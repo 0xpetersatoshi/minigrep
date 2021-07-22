@@ -1,6 +1,6 @@
 use std::{env, process};
 
-use minigrep::Config;
+use minigrep_pbegle::Config;
 
 fn main() {
     let config = Config::new(env::args()).unwrap_or_else(|err| {
@@ -10,7 +10,7 @@ fn main() {
     println!("searching for {}", config.query);
     println!("in file {}", config.filename);
 
-    if let Err(e) = minigrep::run(config) {
+    if let Err(e) = minigrep_pbegle::run(config) {
         eprintln!("Application error: {}", e);
 
         process::exit(1);
